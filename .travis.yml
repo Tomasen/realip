@@ -5,7 +5,7 @@ go:
 
 before_install:
   # lint
-  - go get github.com/golang/lint/golint
+  - go get golang.org/x/lint/golint
 
   # code complexity
   - go get github.com/on99/gocyclo
