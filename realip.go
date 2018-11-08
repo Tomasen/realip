@@ -83,7 +83,9 @@ func FromRequest(r *http.Request) string {
 	return xRealIP
 }
 
-// RealIP is depreciated, use FromRequest instead
+// RealIP return client's real public IP address from http request headers.
+//
+// Deprecated: Use FromRequest instead.
 func RealIP(r *http.Request) string {
 	return FromRequest(r)
 }
